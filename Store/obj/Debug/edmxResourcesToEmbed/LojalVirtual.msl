@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LojaVirtualModelStoreContainer" CdmEntityContainer="LojaVirtualEntities2">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="LojaVirtualModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="idclient" ColumnName="idclient" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemOrder">
+      <EntityTypeMapping TypeName="LojaVirtualModel.ItemOrder">
+        <MappingFragment StoreEntitySet="ItemOrder">
+          <ScalarProperty Name="idorder" ColumnName="idorder" />
+          <ScalarProperty Name="idproduct" ColumnName="idproduct" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="LojaVirtualModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="idorder" ColumnName="idorder" />
+          <ScalarProperty Name="idclient" ColumnName="idclient" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="LojaVirtualModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="idproduct" ColumnName="idproduct" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
